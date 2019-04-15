@@ -45,6 +45,32 @@ khanPercent = (khanVotes / totalVotes * 100)
 correyPercent = (correyVotes / totalVotes * 100)
 liPercent = (liVotes / totalVotes * 100)# Define vote percentages
 otooleyPercent = (otooleyVotes / totalVotes * 100)
+<<<<<<< HEAD
+# Print to terminal
+print(f'Election Results')
+print(f'------------------------')
+print(f'Total Votes: {totalVotes}')
+print(f'------------------------')
+print(f'Khan: {khanPercent:.2f}% ({khanVotes})')
+print(f'Correy: {correyPercent:.2f}% ({correyVotes})')
+print(f'Li: {liPercent:.2f}% ({liVotes})')
+print(f'O\'Tooley: {otooleyPercent:.2f}% ({otooleyVotes})')
+print(f'------------------------')
+print(f'Winner: {winner}')
+print(f'------------------------')
+# Print to file
+print(f'Election Results', file=open("PyPollReults.txt", "a"))
+print(f'------------------------', file=open("PyPollReults.txt", "a"))
+print(f'Total Votes: {totalVotes}', file=open("PyPollReults.txt", "a"))
+print(f'------------------------', file=open("PyPollReults.txt", "a"))
+print(f'Khan: {khanPercent:.2f}% ({khanVotes})', file=open("PyPollReults.txt", "a"))
+print(f'Correy: {correyPercent:.2f}% ({correyVotes})', file=open("PyPollReults.txt", "a"))
+print(f'Li: {liPercent:.2f}% ({liVotes})', file=open("PyPollReults.txt", "a"))
+print(f'O\'Tooley: {otooleyPercent:.2f}% ({otooleyVotes})', file=open("PyPollReults.txt", "a"))
+print(f'------------------------', file=open("PyPollReults.txt", "a"))
+print(f'Winner: {winner}', file=open("PyPollReults.txt", "a"))
+print(f'------------------------', file=open("PyPollReults.txt", "a"))
+=======
 # Create print function for file output
 def resultsFile():
     # Print results
@@ -60,3 +86,4 @@ def resultsFile():
     print(f'Winner: {winner}', file=open("PyPollResults.txt", "a"))
     print(f'------------------------', file=open("PyPollResults.txt", "a"))
 resultsFile()
+>>>>>>> aacea97042339d37ffd57d45f62efdf39554df61
